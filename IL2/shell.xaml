@@ -1,7 +1,6 @@
-<Window x:Class="SPEditorUI.Shell" Title="UIEditor" Width="1000" Height="800" WindowStartupLocation="CenterScreen" WindowState="Maximized" 
+﻿<Window x:Class="SPEditorUI.Shell" Title="UIEditor" Width="1000" Height="800" WindowStartupLocation="CenterScreen" WindowState="Maximized" 
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        >
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <Grid Background="{DynamicResource ControlBackgroundBrush}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto" />
@@ -13,11 +12,11 @@
             <RowDefinition />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-        <Grid Name="gridMenu" Grid.ColumnSpan="2">
+        <Grid Name="_gridMenu" Grid.ColumnSpan="2">
             <ContentControl x:Name ="UI_Menu"  BorderThickness="0,0,0,1"  />
             <!--RegionManager.RegionName="{x:Static com:RegionNames.UI_Menu}"-->
         </Grid>
-        <Grid Name="gridMainTool" Grid.Row="1" Grid.ColumnSpan="2">
+        <Grid Name="_gridMainTool" Grid.Row="1" Grid.ColumnSpan="2">
             <ContentControl  />
             <!--RegionManager.RegionName="{x:Static com:RegionNames.UI_MainTool}"-->
         </Grid>
@@ -25,8 +24,8 @@
             <ContentControl VerticalAlignment="Top"  />
             <!--RegionManager.RegionName="{x:Static com:RegionNames.UI_ComTool}"-->
         </Grid>
-        <Grid Name="gridDockManager" Grid.Row="2" Grid.Column="1" />
-        <Grid Name="gridStatus" Grid.Row="3" Grid.ColumnSpan="2">
+        <Grid Name="_gridDockManager" Grid.Row="2" Grid.Column="1" />
+        <Grid Name="_gridStatus" Grid.Row="3" Grid.ColumnSpan="2">
             <ContentControl  />
             <!--RegionManager.RegionName="{x:Static com:RegionNames.MainStatus}"-->
         </Grid>

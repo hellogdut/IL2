@@ -31,6 +31,14 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="AvalonDock.resources">
       <HintPath>dll\AvalonDock.resources.dll</HintPath>
@@ -112,6 +120,8 @@
     <Reference Include="PropertyTools">
       <HintPath>dll\PropertyTools.dll</HintPath>
     </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xaml" />
     <Reference Include="System" />
     <Reference Include="Microsoft.Practices.Prism.MefExtensions">
@@ -210,10 +220,16 @@
   <ItemGroup>
     <Compile Include="CocoStudioUIEditor.Properties\Resources.cs" />
     <Compile Include="CocoStudioUIEditor.Properties\Settings.cs" />
-    <Compile Include="SPEditorUI.View\DockManagerUC.cs" />
-    <Compile Include="SPEditorUI\App.cs" />
-    <Compile Include="SPEditorUI\Shell.cs" />
     <Compile Include="SPEditorUI\SPEditorUIBootstrapper.cs" />
+    <Compile Include="app.xaml.cs">
+      <DependentUpon>app.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="shell.xaml.cs">
+      <DependentUpon>shell.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="dockmanageruc.xaml.cs">
+      <DependentUpon>dockmanageruc.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CocoStudioUIEditor.Properties\Resources.resources" />
@@ -223,14 +239,6 @@
     <Resource Include="cocostudio_uieditor.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="app.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="shell.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="themes\bureaublack.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -263,13 +271,25 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="view\dockmanageruc.xaml">
-      <Generator>MSBuild:Compile</Generator>
+    <Page Include="app.xaml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="shell.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="dockmanageruc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SPEditorUI.View\" />
+    <Folder Include="view\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
