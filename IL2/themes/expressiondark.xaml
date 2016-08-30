@@ -2789,7 +2789,8 @@
       </Setter.Value>
     </Setter>
   </Style>
-  <Style x:Key="{x:Type common:ListSelectEditor}" TargetType="{x:Type common:ListSelectEditor}">
+    
+    <!--<Style x:Key="{x:Type common:ListSelectEditor}" TargetType="{x:Type common:ListSelectEditor}">
     <Setter Property="Control.Foreground" Value="{DynamicResource TextBrush}" />
     <Setter Property="UIElement.SnapsToDevicePixels" Value="True" />
     <Setter Property="Control.Template" Value="{DynamicResource ComboBoxTemplate}" />
@@ -2819,5 +2820,5 @@
     <Setter Property="wpftoolkit:MessageBox.WindowBorderBrush" Value="{DynamicResource InkBrush}" />
     <Setter Property="Control.BorderThickness" Value="1" />
     <Setter Property="wpftoolkit:MessageBox.CaptionForeground" Value="#FFFFFFFF" />
-  </Style>
+  </Style>-->
 </ResourceDictionary>

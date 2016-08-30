@@ -2,7 +2,7 @@
   <Application.Resources>
     <ResourceDictionary>
       <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="Themes/Generic.xaml" />
+        <ResourceDictionary Source="themes/generic.xaml" />
       </ResourceDictionary.MergedDictionaries>
       <SolidColorBrush x:Key="BrushForegroudWhite" Color="White" />
       <SolidColorBrush x:Key="BrushSpliteLine" Color="#FF3D3D3D" />
