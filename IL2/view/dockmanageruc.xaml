@@ -1,0 +1,57 @@
+<UserControl x:Class ="SPEditorUI.View.DockManagerUC"   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+     xmlns:com="clr-namespace:EditorCommon.SceneManager;assembly=EditorCommon"
+     xmlns:Avalondock="http://avalondock.codeplex.com"
+     xmlns:cal="http://www.codeplex.com/CompositeWPF"
+>
+    <Avalondock:DockingManager Name="dockManager"><!--Theme="{ExpressionDarkTheme}"-->
+        <Avalondock:LayoutRoot>
+            <Avalondock:LayoutRoot.BottomSide>
+                <Avalondock:LayoutAnchorSide>
+                    <Avalondock:LayoutAnchorGroup>
+                        <Avalondock:LayoutAnchorable   Title="输出" /> <!--ContentId ="{Static MainOutput}"-->
+                    </Avalondock:LayoutAnchorGroup>
+                </Avalondock:LayoutAnchorSide>
+            </Avalondock:LayoutRoot.BottomSide>
+            <Avalondock:LayoutPanel Orientation="Vertical">
+                <Avalondock:LayoutPanel Orientation="Horizontal">
+                    <Avalondock:LayoutAnchorablePaneGroup Orientation="Vertical" DockWidth="140">
+                        <Avalondock:LayoutAnchorablePane DockHeight="150" DockMinWidth="140">
+                            <Avalondock:LayoutAnchorable  Title="画布列表" CanClose="false" /> <!--ContentId="{Static UI_ProjectResource}"-->
+                        </Avalondock:LayoutAnchorablePane>
+                        <Avalondock:LayoutAnchorablePane>
+                            <Avalondock:LayoutAnchorable  Title="对象结构" CanClose="false" /> <!--ContentId="{Static UI_StructTree}"-->
+                        </Avalondock:LayoutAnchorablePane>
+                    </Avalondock:LayoutAnchorablePaneGroup>
+                    <Avalondock:LayoutDocumentPaneGroup Orientation="Horizontal">
+                        <Avalondock:LayoutDocumentPane>
+                            <Avalondock:LayoutAnchorable  Title="编辑" CanFloat="false" CanClose="false" /> <!--ContentId="{Static MainRender}"-->
+                            <Avalondock:LayoutAnchorable Title="MainStartPage" /> <!--ContentId="{Static MainStartPage}"-->
+                        </Avalondock:LayoutDocumentPane>
+                    </Avalondock:LayoutDocumentPaneGroup>
+                    <Avalondock:LayoutAnchorablePaneGroup Orientation="Horizontal" DockWidth="460">
+                        <Avalondock:LayoutAnchorablePane DockWidth="1.5*">
+                            <Avalondock:LayoutAnchorable  Title="属性" CanClose="false" /> <!--ContentId="{Static MainPropertyGrid}"-->
+                        </Avalondock:LayoutAnchorablePane>
+                        <Avalondock:LayoutAnchorablePane DockWidth="0.5*">
+                            <Avalondock:LayoutAnchorable  Title="资源" CanClose="false" /> <!--ContentId="{Static MainResource}"-->
+                        </Avalondock:LayoutAnchorablePane>
+                    </Avalondock:LayoutAnchorablePaneGroup>
+                </Avalondock:LayoutPanel>
+                <Avalondock:LayoutAnchorablePaneGroup Orientation="Vertical" DockHeight="200">
+                    <Avalondock:LayoutAnchorablePaneGroup Orientation="Horizontal">
+                        <Avalondock:LayoutAnchorablePane DockWidth="0.15*">
+                            <Avalondock:LayoutAnchorable  x:Name="UI_AnimationList" CanHide="false" Title="动画列表" CanClose="false" /> <!--ContentId="{Static UI_AnimationList}"-->
+                        </Avalondock:LayoutAnchorablePane>
+                        <Avalondock:LayoutAnchorablePane DockWidth="0.85*">
+                            <Avalondock:LayoutAnchorable  x:Name="UI_KeyFrame" CanHide="false" Title="关键帧" CanClose="false" /> <!--ContentId="{Static UI_KeyFrame}"-->
+                        </Avalondock:LayoutAnchorablePane>
+                    </Avalondock:LayoutAnchorablePaneGroup>
+                </Avalondock:LayoutAnchorablePaneGroup>
+            </Avalondock:LayoutPanel>
+        </Avalondock:LayoutRoot>
+    </Avalondock:DockingManager>
+
+</UserControl>

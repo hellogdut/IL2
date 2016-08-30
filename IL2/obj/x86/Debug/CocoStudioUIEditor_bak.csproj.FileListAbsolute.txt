@@ -1,0 +1,16 @@
+C:\Users\Administrator\Documents\GitHub\IL2\IL2\obj\x86\Debug\app.baml
+C:\Users\Administrator\Documents\GitHub\IL2\IL2\obj\x86\Debug\shell.baml
+C:\Users\Administrator\Documents\GitHub\IL2\IL2\obj\x86\Debug\themes\bureaublack.baml
+C:\Users\Administrator\Documents\GitHub\IL2\IL2\obj\x86\Debug\themes\bureaublue.baml
+C:\Users\Administrator\Documents\GitHub\IL2\IL2\obj\x86\Debug\themes\expressiondark.baml
+C:\Users\Administrator\Documents\GitHub\IL2\IL2\obj\x86\Debug\themes\generic.baml
+C:\Users\Administrator\Documents\GitHub\IL2\IL2\obj\x86\Debug\themes\shinyred.baml
+C:\Users\Administrator\Documents\GitHub\IL2\IL2\obj\x86\Debug\themes\themes-expressionlight.baml
+C:\Users\Administrator\Documents\GitHub\IL2\IL2\obj\x86\Debug\themes\themes-shinyblue.baml
+C:\Users\Administrator\Documents\GitHub\IL2\IL2\obj\x86\Debug\themes\whistlerblue.baml
+C:\Users\Administrator\Documents\GitHub\IL2\IL2\obj\x86\Debug\view\dockmanageruc.baml
+C:\Users\Administrator\Documents\GitHub\IL2\IL2\obj\x86\Debug\app.g.cs
+C:\Users\Administrator\Documents\GitHub\IL2\IL2\obj\x86\Debug\shell.g.cs
+C:\Users\Administrator\Documents\GitHub\IL2\IL2\obj\x86\Debug\view\dockmanageruc.g.cs
+C:\Users\Administrator\Documents\GitHub\IL2\IL2\obj\x86\Debug\CocoStudioUIEditor_MarkupCompile.cache
+C:\Users\Administrator\Documents\GitHub\IL2\IL2\obj\x86\Debug\CocoStudioUIEditor.g.resources

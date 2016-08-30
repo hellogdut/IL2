@@ -1,11 +1,11 @@
-﻿<Application x:Class="SPEditorUI.App" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <Application.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="themes/generic.xaml" />
-            </ResourceDictionary.MergedDictionaries>
-            <SolidColorBrush x:Key="BrushForegroudWhite" Color="White" />
-            <SolidColorBrush x:Key="BrushSpliteLine" Color="#FF3D3D3D" />
-        </ResourceDictionary>
-    </Application.Resources>
+<Application x:Class="SPEditorUI.App" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Application.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="themes/generic.xaml" />
+      </ResourceDictionary.MergedDictionaries>
+      <SolidColorBrush x:Key="BrushForegroudWhite" Color="White" />
+      <SolidColorBrush x:Key="BrushSpliteLine" Color="#FF3D3D3D" />
+    </ResourceDictionary>
+  </Application.Resources>
 </Application>
