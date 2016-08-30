@@ -22,11 +22,11 @@ namespace SPEditorUI
     {
         private bool isFirst;
         private Widget widget;
-        internal Grid gridMenu;
-        internal Grid gridMainTool;
-        internal Grid gridDockManager;
-        internal Grid gridStatus;
-        private bool _contentLoaded;
+        //internal Grid gridMenu;
+        //internal Grid gridMainTool;
+        //internal Grid gridDockManager;
+        //internal Grid gridStatus;
+        //private bool _contentLoaded;
         public Shell()
         {
             this.InitializeComponent();
@@ -66,39 +66,39 @@ namespace SPEditorUI
                 base.Title = args.Project.Name + "--" + LanguageInfo.Title_UIEditor;
             }
         }
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0"), DebuggerNonUserCode]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-            {
-                return;
-            }
-            this._contentLoaded = true;
-            Uri resourceLocator = new Uri("/CocoStudioUIEditor;component/shell.xaml", UriKind.Relative);
-            Application.LoadComponent(this, resourceLocator);
-        }
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0"), EditorBrowsable(EditorBrowsableState.Never), DebuggerNonUserCode]
-        void IComponentConnector.Connect(int connectionId, object target)
-        {
-            switch (connectionId)
-            {
-                case 1:
-                    this.gridMenu = (Grid)target;
-                    return;
-                case 2:
-                    this.gridMainTool = (Grid)target;
-                    return;
-                case 3:
-                    this.gridDockManager = (Grid)target;
-                    return;
-                case 4:
-                    this.gridStatus = (Grid)target;
-                    return;
-                default:
-                    this._contentLoaded = true;
-                    return;
-            }
-        }
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0"), DebuggerNonUserCode]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //    {
+        //        return;
+        //    }
+        //    this._contentLoaded = true;
+        //    Uri resourceLocator = new Uri("/CocoStudioUIEditor;component/shell.xaml", UriKind.Relative);
+        //    Application.LoadComponent(this, resourceLocator);
+        //}
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0"), EditorBrowsable(EditorBrowsableState.Never), DebuggerNonUserCode]
+        //void IComponentConnector.Connect(int connectionId, object target)
+        //{
+        //    switch (connectionId)
+        //    {
+        //        case 1:
+        //            this.gridMenu = (Grid)target;
+        //            return;
+        //        case 2:
+        //            this.gridMainTool = (Grid)target;
+        //            return;
+        //        case 3:
+        //            this.gridDockManager = (Grid)target;
+        //            return;
+        //        case 4:
+        //            this.gridStatus = (Grid)target;
+        //            return;
+        //        default:
+        //            this._contentLoaded = true;
+        //            return;
+        //    }
+        //}
         //void IShell.add_Closing(CancelEventHandler value)
         //{
         //    base.Closing += value;

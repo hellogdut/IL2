@@ -6,7 +6,7 @@
      xmlns:Avalondock="http://avalondock.codeplex.com"
      xmlns:cal="http://www.codeplex.com/CompositeWPF"
 >
-    <Avalondock:DockingManager Name="dockManager"><!--Theme="{ExpressionDarkTheme}"-->
+    <Avalondock:DockingManager x:Name="dockManager"><!--Theme="{ExpressionDarkTheme}"-->
         <Avalondock:LayoutRoot>
             <Avalondock:LayoutRoot.BottomSide>
                 <Avalondock:LayoutAnchorSide>

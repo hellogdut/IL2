@@ -13,7 +13,7 @@ namespace SPEditorUI
     public partial class App : System.Windows.Application
     {
         public static EditMemory<EditMemoryFile> EditMemory;
-        private bool _contentLoaded;
+        //private bool _contentLoaded;
         public App()
         {
             Option.SetCurrentIDE(EnumEditorIDE.UI);
@@ -192,17 +192,17 @@ namespace SPEditorUI
             SPEditorUIBootstrapper sPEditorUIBootstrapper = new SPEditorUIBootstrapper();
             sPEditorUIBootstrapper.Run();
         }
-        [GeneratedCode("PresentationBuildTasks", "4.0.0.0"), DebuggerNonUserCode]
-        public void InitializeComponent()
-        {
-            if (this._contentLoaded)
-            {
-                return;
-            }
-            this._contentLoaded = true;
-            Uri resourceLocator = new Uri("/CocoStudioUIEditor;component/app.xaml", UriKind.Relative);
-            System.Windows.Application.LoadComponent(this, resourceLocator);
-        }
+        //[GeneratedCode("PresentationBuildTasks", "4.0.0.0"), DebuggerNonUserCode]
+        //public void InitializeComponent()
+        //{
+        //    if (this._contentLoaded)
+        //    {
+        //        return;
+        //    }
+        //    this._contentLoaded = true;
+        //    Uri resourceLocator = new Uri("/CocoStudioUIEditor;component/app.xaml", UriKind.Relative);
+        //    System.Windows.Application.LoadComponent(this, resourceLocator);
+        //}
         [GeneratedCode("PresentationBuildTasks", "4.0.0.0"), DebuggerNonUserCode, STAThread]
         public static void Main()
         {
