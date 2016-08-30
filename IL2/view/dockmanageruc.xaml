@@ -19,34 +19,34 @@
                 <Avalondock:LayoutPanel Orientation="Horizontal">
                     <Avalondock:LayoutAnchorablePaneGroup Orientation="Vertical" DockWidth="140">
                         <Avalondock:LayoutAnchorablePane DockHeight="150" DockMinWidth="140">
-                            <Avalondock:LayoutAnchorable  Title="画布列表" CanClose="false" /> <!--ContentId="{Static UI_ProjectResource}"-->
+                            <Avalondock:LayoutAnchorable  Title="画布列表" CanClose="false" ContentId="UI_ProjectResource" /> 
                         </Avalondock:LayoutAnchorablePane>
                         <Avalondock:LayoutAnchorablePane>
-                            <Avalondock:LayoutAnchorable  Title="对象结构" CanClose="false" /> <!--ContentId="{Static UI_StructTree}"-->
+                            <Avalondock:LayoutAnchorable  Title="对象结构" CanClose="false" ContentId ="UI_StructTree"/> <!--ContentId="{Static UI_StructTree}"-->
                         </Avalondock:LayoutAnchorablePane>
                     </Avalondock:LayoutAnchorablePaneGroup>
                     <Avalondock:LayoutDocumentPaneGroup Orientation="Horizontal">
                         <Avalondock:LayoutDocumentPane>
-                            <Avalondock:LayoutAnchorable  Title="编辑" CanFloat="false" CanClose="false" /> <!--ContentId="{Static MainRender}"-->
-                            <Avalondock:LayoutAnchorable Title="MainStartPage" /> <!--ContentId="{Static MainStartPage}"-->
+                            <Avalondock:LayoutAnchorable  Title="编辑" CanFloat="false" CanClose="false" ContentId ="MainRender"/> <!--ContentId="{Static MainRender}"-->
+                            <Avalondock:LayoutAnchorable Title="MainStartPage" ContentId ="MainStartPage"/> <!--ContentId="{Static MainStartPage}"-->
                         </Avalondock:LayoutDocumentPane>
                     </Avalondock:LayoutDocumentPaneGroup>
                     <Avalondock:LayoutAnchorablePaneGroup Orientation="Horizontal" DockWidth="460">
                         <Avalondock:LayoutAnchorablePane DockWidth="1.5*">
-                            <Avalondock:LayoutAnchorable  Title="属性" CanClose="false" /> <!--ContentId="{Static MainPropertyGrid}"-->
+                            <Avalondock:LayoutAnchorable  Title="属性" CanClose="false" ContentId="MainPropertyGrid"/> <!--ContentId="{Static MainPropertyGrid}"-->
                         </Avalondock:LayoutAnchorablePane>
                         <Avalondock:LayoutAnchorablePane DockWidth="0.5*">
-                            <Avalondock:LayoutAnchorable  Title="资源" CanClose="false" /> <!--ContentId="{Static MainResource}"-->
+                            <Avalondock:LayoutAnchorable  Title="资源" CanClose="false" ContentId="MainResource"/> <!--ContentId="{Static MainResource}"-->
                         </Avalondock:LayoutAnchorablePane>
                     </Avalondock:LayoutAnchorablePaneGroup>
                 </Avalondock:LayoutPanel>
                 <Avalondock:LayoutAnchorablePaneGroup Orientation="Vertical" DockHeight="200">
                     <Avalondock:LayoutAnchorablePaneGroup Orientation="Horizontal">
                         <Avalondock:LayoutAnchorablePane DockWidth="0.15*">
-                            <Avalondock:LayoutAnchorable  x:Name="UI_AnimationList" CanHide="false" Title="动画列表" CanClose="false" /> <!--ContentId="{Static UI_AnimationList}"-->
+                            <Avalondock:LayoutAnchorable  x:Name="UI_AnimationList" CanHide="false" Title="动画列表" CanClose="false" ContentId="UI_AnimationList"/> <!--ContentId="{Static UI_AnimationList}"-->
                         </Avalondock:LayoutAnchorablePane>
                         <Avalondock:LayoutAnchorablePane DockWidth="0.85*">
-                            <Avalondock:LayoutAnchorable  x:Name="UI_KeyFrame" CanHide="false" Title="关键帧" CanClose="false" /> <!--ContentId="{Static UI_KeyFrame}"-->
+                            <Avalondock:LayoutAnchorable  x:Name="UI_KeyFrame" CanHide="false" Title="关键帧" CanClose="false" ContentId="UI_KeyFrame"/> <!--ContentId="{Static UI_KeyFrame}"-->
                         </Avalondock:LayoutAnchorablePane>
                     </Avalondock:LayoutAnchorablePaneGroup>
                 </Avalondock:LayoutAnchorablePaneGroup>

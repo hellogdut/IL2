@@ -82,3 +82,4 @@ C:\Users\Administrator\Documents\GitHub\IL2\IL2\obj\x86\Release\CocoStudioUIEdit
 C:\Users\Administrator\Documents\GitHub\IL2\IL2\obj\x86\Release\CocoStudioUIEditor.g.resources
 C:\Users\Administrator\Documents\GitHub\IL2\IL2\obj\x86\Release\CocoStudioUIEditor.exe
 C:\Users\Administrator\Documents\GitHub\IL2\IL2\obj\x86\Release\CocoStudioUIEditor.pdb
+C:\Users\Administrator\Documents\GitHub\IL2\IL2\obj\x86\Release\CocoStudioUIEditor_bak.csprojResolveAssemblyReference.cache

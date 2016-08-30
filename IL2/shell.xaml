@@ -1,7 +1,13 @@
-<Window x:Class="SPEditorUI.Shell" Title="UIEditor" Width="1000" Height="800" WindowStartupLocation="CenterScreen" WindowState="Maximized" 
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        >
+<Window x:Class="SPEditorUI.Shell"
+     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+     xmlns:avalondock="http://avalondock.codeplex.com"
+     xmlns:cal="http://www.codeplex.com/CompositeWPF"
+     xmlns:com="clr-namespace:EditorCommon.SceneManager;assembly=EditorCommon"
+     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+     xmlns:prsm="http://www.codeplex.com/prism"
+ Title="UIEditor" Width="1000" Height="800" WindowStartupLocation="CenterScreen" WindowState="Maximized">
     <Grid Background="{DynamicResource ControlBackgroundBrush}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto" />
@@ -13,22 +19,18 @@
             <RowDefinition />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-        <Grid Name="gridMenu" Grid.ColumnSpan="2">
-            <ContentControl x:Name ="UI_Menu"  BorderThickness="0,0,0,1"  />
-            <!--RegionManager.RegionName="{x:Static com:RegionNames.UI_Menu}"-->
+        <Grid Name="gridMenu" ColumnSpan="2">
+            <ContentControl BorderThickness="0,0,0,1" prsm:RegionManager.RegionName ="{x:Static com:RegionNames.UI_Menu}"/>
         </Grid>
-        <Grid Name="gridMainTool" Grid.Row="1" Grid.ColumnSpan="2">
-            <ContentControl  />
-            <!--RegionManager.RegionName="{x:Static com:RegionNames.UI_MainTool}"-->
+        <Grid Name="gridMainTool" Row="1" ColumnSpan="2">
+            <ContentControl  prsm:RegionManager.RegionName ="{x:Static com:RegionNames.UI_MainTool}" />
         </Grid>
-        <Grid Grid.Row="2">
-            <ContentControl VerticalAlignment="Top"  />
-            <!--RegionManager.RegionName="{x:Static com:RegionNames.UI_ComTool}"-->
+        <Grid Row="2">
+            <ContentControl VerticalAlignment="Top" prsm:RegionManager.RegionName ="{x:Static com:RegionNames.UI_ComTool}"/>
         </Grid>
-        <Grid Name="gridDockManager" Grid.Row="2" Grid.Column="1" />
-        <Grid Name="gridStatus" Grid.Row="3" Grid.ColumnSpan="2">
-            <ContentControl  />
-            <!--RegionManager.RegionName="{x:Static com:RegionNames.MainStatus}"-->
+        <Grid Name="gridDockManager" Row="2" Column="1" />
+        <Grid Name="gridStatus" Row="3" ColumnSpan="2">
+            <ContentControl prsm:RegionManager.RegionName ="{x:Static com:RegionNames.MainStatus}"/>
         </Grid>
     </Grid>
 </Window>
