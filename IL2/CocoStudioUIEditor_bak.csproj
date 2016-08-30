@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{0D171B20-1E76-4BD5-9137-60C24C3FF39B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>CocoStudioUIEditor</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AvalonDock.resources">
+      <HintPath>dll\AvalonDock.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="AvalonDock.Themes.Expression">
+      <HintPath>dll\AvalonDock.Themes.Expression.dll</HintPath>
+    </Reference>
+    <Reference Include="BugTrapN">
+      <HintPath>dll\BugTrapN.dll</HintPath>
+    </Reference>
+    <Reference Include="ClassLibrary1">
+      <HintPath>dll\ClassLibrary1.dll</HintPath>
+    </Reference>
+    <Reference Include="CocoStudio.Basic">
+      <HintPath>dll\CocoStudio.Basic.dll</HintPath>
+    </Reference>
+    <Reference Include="CocoStudio.Model.Basic">
+      <HintPath>dll\CocoStudio.Model.Basic.dll</HintPath>
+    </Reference>
+    <Reference Include="CocoStudio.UserStatistics">
+      <HintPath>dll\CocoStudio.UserStatistics.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV">
+      <HintPath>dll\Emgu.CV.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.Util">
+      <HintPath>dll\Emgu.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="Modules.Animation.BoneRelationship">
+      <HintPath>dll\Modules.Animation.BoneRelationship.dll</HintPath>
+    </Reference>
+    <Reference Include="Modules.Animation.BoneTree">
+      <HintPath>dll\Modules.Animation.BoneTree.dll</HintPath>
+    </Reference>
+    <Reference Include="Modules.Animation.MainTool">
+      <HintPath>dll\Modules.Animation.MainTool.dll</HintPath>
+    </Reference>
+    <Reference Include="Modules.Animation.Menu">
+      <HintPath>dll\Modules.Animation.Menu.dll</HintPath>
+    </Reference>
+    <Reference Include="Modules.Animation.RenderContextMenu">
+      <HintPath>dll\Modules.Animation.RenderContextMenu.dll</HintPath>
+    </Reference>
+    <Reference Include="Modules.Animation.ResouceControl">
+      <HintPath>dll\Modules.Animation.ResouceControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Modules.Communal.AnimationAggregationBones">
+      <HintPath>dll\Modules.Communal.AnimationAggregationBones.dll</HintPath>
+    </Reference>
+    <Reference Include="Modules.Communal.AnimationControl">
+      <HintPath>dll\Modules.Communal.AnimationControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Modules.Communal.AnimationFrameControl">
+      <HintPath>dll\Modules.Communal.AnimationFrameControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Modules.Communal.ControlHelper">
+      <HintPath>dll\Modules.Communal.ControlHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Modules.Communal.DrawCurve">
+      <HintPath>dll\Modules.Communal.DrawCurve.dll</HintPath>
+    </Reference>
+    <Reference Include="Modules.Communal.Packer">
+      <HintPath>dll\Modules.Communal.Packer.dll</HintPath>
+    </Reference>
+    <Reference Include="Modules.Communal.PList">
+      <HintPath>dll\Modules.Communal.PList.dll</HintPath>
+    </Reference>
+    <Reference Include="Modules.Communal.Ruler">
+      <HintPath>..\IL\dll\Modules.Communal.Ruler.dll</HintPath>
+    </Reference>
+    <Reference Include="PostSharp">
+      <HintPath>dll\PostSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="EditorCommon">
+      <HintPath>dll\EditorCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System" />
+    <Reference Include="Microsoft.Practices.Prism.MefExtensions">
+      <HintPath>dll\Microsoft.Practices.Prism.MefExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism">
+      <HintPath>dll\Microsoft.Practices.Prism.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="UpdataHelper">
+      <HintPath>dll\UpdataHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="Editor.ControlLib">
+      <HintPath>dll\Editor.ControlLib.dll</HintPath>
+    </Reference>
+    <Reference Include="AvalonDock">
+      <HintPath>dll\AvalonDock.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>dll\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Modules.Communal.MultiLanguage">
+      <HintPath>dll\Modules.Communal.MultiLanguage.dll</HintPath>
+    </Reference>
+    <Reference Include="Modules.Communal.Guide">
+      <HintPath>dll\Modules.Communal.Guide.dll</HintPath>
+    </Reference>
+    <Reference Include="EditorProxy">
+      <HintPath>dll\EditorProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="GameEngineInterface">
+      <HintPath>dll\GameEngineInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="CocoStudio.EngineAdapterWrap">
+      <HintPath>dll\CocoStudio.EngineAdapterWrap.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFUndoManager">
+      <HintPath>dll\WPFUndoManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Modules.Communal.AutoSave">
+      <HintPath>dll\Modules.Communal.AutoSave.dll</HintPath>
+    </Reference>
+    <Reference Include="Modules.UI.RenderContextMenu">
+      <HintPath>dll\Modules.UI.RenderContextMenu.dll</HintPath>
+    </Reference>
+    <Reference Include="Modules.Communal.Status">
+      <HintPath>..\IL\dll\Modules.Communal.Status.dll</HintPath>
+    </Reference>
+    <Reference Include="Modules.Communal.Output">
+      <HintPath>dll\Modules.Communal.Output.dll</HintPath>
+    </Reference>
+    <Reference Include="Modules.Communal.PropertyGrid">
+      <HintPath>dll\Modules.Communal.PropertyGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Modules.Communal.Render">
+      <HintPath>dll\Modules.Communal.Render.dll</HintPath>
+    </Reference>
+    <Reference Include="Modules.Communal.Resource">
+      <HintPath>dll\Modules.Communal.Resource.dll</HintPath>
+    </Reference>
+    <Reference Include="Modules.UI.ComTool">
+      <HintPath>dll\Modules.UI.ComTool.dll</HintPath>
+    </Reference>
+    <Reference Include="Modules.UI.Menu">
+      <HintPath>dll\Modules.UI.Menu.dll</HintPath>
+    </Reference>
+    <Reference Include="Modules.UI.MainTool">
+      <HintPath>dll\Modules.UI.MainTool.dll</HintPath>
+    </Reference>
+    <Reference Include="Modules.UI.StructTree">
+      <HintPath>dll\Modules.UI.StructTree.dll</HintPath>
+    </Reference>
+    <Reference Include="Modules.UI.AnimationControl">
+      <HintPath>dll\Modules.UI.AnimationControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Modules.UI.AnimationFrameControl">
+      <HintPath>dll\Modules.UI.AnimationFrameControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Modules.UI.ProjectResource">
+      <HintPath>dll\Modules.UI.ProjectResource.dll</HintPath>
+    </Reference>
+    <Reference Include="Modules.Communal.StartPage">
+      <HintPath>dll\Modules.Communal.StartPage.dll</HintPath>
+    </Reference>
+    <Reference Include="Modules.Communal.AnimationAggregationFrames">
+      <HintPath>dll\Modules.Communal.AnimationAggregationFrames.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xceed.Wpf.Toolkit">
+      <HintPath>dll\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CocoStudioUIEditor.Properties\Resources.cs" />
+    <Compile Include="CocoStudioUIEditor.Properties\Settings.cs" />
+    <Compile Include="SPEditorUI.View\DockManagerUC.cs" />
+    <Compile Include="SPEditorUI\App.cs" />
+    <Compile Include="SPEditorUI\Shell.cs" />
+    <Compile Include="SPEditorUI\SPEditorUIBootstrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CocoStudioUIEditor.Properties\Resources.resources" />
+    <EmbeddedResource Include="PostSharp.ImplementationDetails_eb259e48.EnhancedByPostSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="cocostudio_uieditor.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="app.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="shell.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="themes\bureaublack.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="themes\bureaublue.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="themes\expressiondark.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="themes\generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="themes\shinyred.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="themes\themes-expressionlight.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="themes\themes-shinyblue.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="themes\whistlerblue.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="view\dockmanageruc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

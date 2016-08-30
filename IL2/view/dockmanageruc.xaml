@@ -1,0 +1,57 @@
+<DockManagerUC xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+     xmlns:com="clr-namespace:EditorCommon.SceneManager;assembly=EditorCommon"
+     xmlns:avalondock="http://avalondock.codeplex.com"
+     xmlns:cal="http://www.codeplex.com/CompositeWPF"
+>
+    <DockingManager Name="dockManager" Theme="{ExpressionDarkTheme}">
+        <LayoutRoot>
+            <LayoutRoot.BottomSide>
+                <LayoutAnchorSide>
+                    <LayoutAnchorGroup>
+                        <LayoutAnchorable ContentId="{Static MainOutput}" Title="输出" />
+                    </LayoutAnchorGroup>
+                </LayoutAnchorSide>
+            </LayoutRoot.BottomSide>
+            <LayoutPanel Orientation="Vertical">
+                <LayoutPanel Orientation="Horizontal">
+                    <LayoutAnchorablePaneGroup Orientation="Vertical" DockWidth="140">
+                        <LayoutAnchorablePane DockHeight="150" DockMinWidth="140">
+                            <LayoutAnchorable ContentId="{Static UI_ProjectResource}" Title="画布列表" CanClose="false" />
+                        </LayoutAnchorablePane>
+                        <LayoutAnchorablePane>
+                            <LayoutAnchorable ContentId="{Static UI_StructTree}" Title="对象结构" CanClose="false" />
+                        </LayoutAnchorablePane>
+                    </LayoutAnchorablePaneGroup>
+                    <LayoutDocumentPaneGroup Orientation="Horizontal">
+                        <LayoutDocumentPane>
+                            <LayoutAnchorable ContentId="{Static MainRender}" Title="编辑" CanFloat="false" CanClose="false" />
+                            <LayoutAnchorable ContentId="{Static MainStartPage}" Title="MainStartPage" />
+                        </LayoutDocumentPane>
+                    </LayoutDocumentPaneGroup>
+                    <LayoutAnchorablePaneGroup Orientation="Horizontal" DockWidth="460">
+                        <LayoutAnchorablePane DockWidth="1.5*">
+                            <LayoutAnchorable ContentId="{Static MainPropertyGrid}" Title="属性" CanClose="false" />
+                        </LayoutAnchorablePane>
+                        <LayoutAnchorablePane DockWidth="0.5*">
+                            <LayoutAnchorable ContentId="{Static MainResource}" Title="资源" CanClose="false" />
+                        </LayoutAnchorablePane>
+                    </LayoutAnchorablePaneGroup>
+                </LayoutPanel>
+                <LayoutAnchorablePaneGroup Orientation="Vertical" DockHeight="200">
+                    <LayoutAnchorablePaneGroup Orientation="Horizontal">
+                        <LayoutAnchorablePane DockWidth="0.15*">
+                            <LayoutAnchorable ContentId="{Static UI_AnimationList}" x:Name="UI_AnimationList" CanHide="false" Title="动画列表" CanClose="false" />
+                        </LayoutAnchorablePane>
+                        <LayoutAnchorablePane DockWidth="0.85*">
+                            <LayoutAnchorable ContentId="{Static UI_KeyFrame}" x:Name="UI_KeyFrame" CanHide="false" Title="关键帧" CanClose="false" />
+                        </LayoutAnchorablePane>
+                    </LayoutAnchorablePaneGroup>
+                </LayoutAnchorablePaneGroup>
+            </LayoutPanel>
+        </LayoutRoot>
+    </DockingManager>
+    
+</DockManagerUC>
